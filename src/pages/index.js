@@ -1,6 +1,3 @@
-// src/app/page.js
-'use client'; // This is the line you need to add
-
 import Link from 'next/link';
 import { getSortedPostsData } from '../lib/posts';
 import styled from 'styled-components';
@@ -51,9 +48,7 @@ const PostExcerpt = styled.p`
   line-height: 1.6;
 `;
 
-export default function Home() {
-  const allPostsData = getSortedPostsData();
-
+export default function Home({ allPostsData }) {
   return (
     <HomePageWrapper>
       <PageTitle>Blog</PageTitle>
@@ -70,4 +65,13 @@ export default function Home() {
       </PostList>
     </HomePageWrapper>
   );
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }

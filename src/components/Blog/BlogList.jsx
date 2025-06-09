@@ -1,10 +1,8 @@
-// src/components/Blog/BlogList.jsx
-'use client'; // This is now a dedicated Client Component.
+'use client';
 
 import Link from 'next/link';
 import styled from 'styled-components';
 
-// All of our styled-components now live here.
 const HomePageWrapper = styled.div`
   padding: 40px 20px;
   max-width: 800px;
@@ -51,7 +49,6 @@ const PostExcerpt = styled.p`
   line-height: 1.6;
 `;
 
-// This component receives the post data as a prop.
 export default function BlogList({ allPostsData }) {
   return (
     <HomePageWrapper>

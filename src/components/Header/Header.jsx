@@ -1,12 +1,11 @@
-// src/components/Header/Header.jsx
-'use client' // This directive is needed for styled-components in Next.js App Router
+'use client'
 
 import React from 'react';
-import Link from 'next/link'; // Import the special Link component from Next.js
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
-  background-color: #1a1a2e; // Same dark blue as our Hero section
+  background-color: #1a1a2e;
   padding: 20px 40px;
   color: white;
   display: flex;
@@ -44,7 +43,7 @@ const NavLink = styled(Link)`
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #00d1cd; // The bright cyan accent color
+    background-color: #00d1cd;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
