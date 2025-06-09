@@ -10,7 +10,6 @@ const HomePageWrapper = styled.div`
 
 const PageTitle = styled.h1`
   font-size: 3rem;
-  color: #e0e0e0;
   border-bottom: 2px solid #00d1cd;
   padding-bottom: 10px;
   margin-bottom: 40px;
@@ -31,9 +30,7 @@ const PostTitle = styled.h2`
   a {
     text-decoration: none;
     color: #00d1cd;
-    &:hover {
-      text-decoration: underline;
-    }
+    &:hover { text-decoration: underline; }
   }
 `;
 
@@ -44,7 +41,6 @@ const PostDate = styled.small`
 `;
 
 const PostExcerpt = styled.p`
-  color: #e0e0e0;
   line-height: 1.6;
 `;
 

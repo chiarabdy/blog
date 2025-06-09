@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import profilePic from '../assets/images/profile-photo.jpg'; 
+
+// This path assumes your assets folder is at 'src/assets/'
+import profilePic from '../assets/images/profile-photo.png'; 
 
 const AboutPageWrapper = styled.div`
   background-color: #ffffff;
   color: #333;
   padding: 60px 20px;
+  min-height: calc(100vh - 160px); /* Ensures it fills the screen height between header and footer */
 `;
 
 const ContentWrapper = styled.div`
@@ -59,7 +62,7 @@ export default function AboutPage() {
         <AboutText>
           <h1>About Me</h1>
           <p>
-            I'm a developer driven by a deep-seated passion for problem-solving and technology. My journey into tech was fueled by a love for logical challenges, which I first honed while earning my Bachelor's degree in English Literature.
+            I'm a developer driven by a deep-seated passion for problem-solving and technology. My journey into tech was fueled by a love for logical challenges, which I first honed while earning my Bachelor's degree in English Literature from Damascus University.
           </p>
           <p>
             That background gave me a unique perspective, blending analytical thinking with strong communication skills—essential for writing clear documentation and collaborating effectively. This path led me to incredible hands-on software engineering internships at <strong>Adobe</strong> and <strong>Archilogic</strong>, and a role as an IT Support Assistant at <strong>KUNIGO</strong>.
